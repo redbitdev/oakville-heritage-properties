@@ -11,3 +11,7 @@ All modules build on top of each other and start off building separate platform 
 
 At the end of all the modules you should have a good introduction to Xamarin and how to use with Visual Studio 2013 and start building your cross platform apps!
 
+Here are some screenshots of what the app would look like on Android, iPhone and Windows Phone
+<p><img src="http://www.markarteaga.com/wp-content/uploads/2014/11/heritage-properties-android.png"></img>
+<img src="http://www.markarteaga.com/wp-content/uploads/2014/11/heritage-properties-iphone.png"></img>
+<img src="http://www.markarteaga.com/wp-content/uploads/2014/11/heritage-properties-wp.png"></img></p>
