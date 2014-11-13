@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="33" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733.0"/>
+    </dependencies>
+    <scenes>
+        <!--class Prefix:identifier View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HeritagePropertiesiOSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="65"/>
+                        <viewControllerLayoutGuide type="bottom" id="66"/>
+                    </layoutGuides>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5" translatesAutoresizingMaskIntoConstraints="NO" key="view">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6" reuseIdentifier="heritagePropertyCell" style="IBUITableViewCellStyleSubtitle" textLabel="25" detailTextLabel="26">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7" tableViewCell="6">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <segue destination="35" kind="push" id="47" identifier="segueDetails"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableViewProperties" destination="5" id="name-outlet-5"/>
+                        <outlet property="btnMapList" destination="74" id="name-outlet-74"/>
+                    </connections>
+                    <navigationItem title="Oakville Heritage Properties" id="44" key="navigationItem">
+                        <barButtonItem title="" id="74" translatesAutoresizingMaskIntoConstraints="NO" key="rightBarButtonItem" image="pin.png"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="734"/>
+        </scene>
+        <scene sceneID="32">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="33" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="36">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="45"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="737"/>
+        </scene>
+        <scene sceneID="38">
+            <objects>
+                <viewController id="35" sceneMemberID="viewController" customClass="HeritagePropertyDetailsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="67"/>
+                        <viewControllerLayoutGuide type="bottom" id="68"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="40">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Id" lineBreakMode="tailTruncation" minimumFontSize="10" id="56" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="98" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[ID_Value]" lineBreakMode="tailTruncation" minimumFontSize="10" id="57" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="115" width="280" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[ID_Value]" lineBreakMode="tailTruncation" minimumFontSize="10" id="60" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="160" width="280" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Latitiude" lineBreakMode="tailTruncation" minimumFontSize="10" id="61" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="144" width="110" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Longitude" lineBreakMode="tailTruncation" minimumFontSize="10" id="62" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="189" width="110" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[ID_Longitude]" lineBreakMode="tailTruncation" minimumFontSize="10" id="63" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="205" width="280" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" id="64" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="245" width="320" height="323"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="39"/>
+                    <connections>
+                        <outlet property="lblId" destination="57" id="name-outlet-57"/>
+                        <outlet property="lblLat" destination="60" id="name-outlet-60"/>
+                        <outlet property="lblLon" destination="63" id="name-outlet-63"/>
+                        <outlet property="webview" destination="64" id="name-outlet-64"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="730"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon-Small-40.png" width="80" height="80"/>
+        <image name="Icon-60.png" width="120" height="120"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="pin.png" width="22" height="22"/>
+        <image name="list.png" width="22" height="22"/>
+    </resources>
+</document>

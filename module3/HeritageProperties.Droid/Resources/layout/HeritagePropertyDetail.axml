@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="15px" />
+    <TextView
+        android:text="[ID_Value]"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblId"
+        android:layout_marginLeft="15px" />
+    <TextView
+        android:text="Lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="15px" />
+    <TextView
+        android:text="[LAT_Value]"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblLat"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="15px" />
+    <TextView
+        android:text="Lon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="15px" />
+    <TextView
+        android:text="[LON_Value]"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblLon"
+        android:layout_marginLeft="15px" />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView" />
+</LinearLayout>
